@@ -18,6 +18,7 @@ section {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 }
 
 .content {
@@ -25,7 +26,9 @@ section {
   flex-direction: column;
   background: white;
   border-radius: 22px;
-  padding: 35px;
+  overflow: hidden;
+  width: 50vw;
+  height: 65%;
 }
 
 .title h1 {
@@ -36,4 +39,25 @@ section {
 
 .main-content {
   display: flex;
+  justify-content: space-between;
+  
 }
+
+.img-stack{
+    position: relative;
+    right: 70px;
+}
+
+.img-stack img{
+position: absolute;
+}
+
+.img-stack img[alt="block"]{
+    position: fixed;
+    margin-top: 120px;
+}
+
+/* .drawings{
+ position: relative;
+    
+} */
