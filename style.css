@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Kumbh Sans";
+  overflow-y: hidden;
 }
 
 section {
@@ -27,7 +28,7 @@ section {
   background: white;
   border-radius: 22px;
   overflow: hidden;
-  width: 50vw;
+  width: 60vw;
   height: 65%;
 }
 
@@ -52,12 +53,16 @@ section {
 position: absolute;
 }
 
+.img-stack img[alt="lines"]{ 
+    position: absolute;
+    transform: translate(-490px,-380px);
+    z-index: 10;
+}
 .img-stack img[alt="block"]{
     position: fixed;
     margin-top: 120px;
+    z-index: 10;
 }
 
-/* .drawings{
- position: relative;
-    
-} */
+
+
