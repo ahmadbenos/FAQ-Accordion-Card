@@ -2,8 +2,16 @@
 :root {
   --bg-1: hsl(273, 75%, 66%);
   --bg-2: hsl(240, 73%, 65%);
-  --very-dark-grey-blue: hsl(237, 12%, 33%)
-  --dark-grey-blue: hsl(240, 6%, 50%) 
+  --very-dark-grey-blue: hsl(237, 12%, 33%);
+  --dark-grey-blue: hsl(240, 6%, 50%);
+  --divider: hsl(240, 5%, 91%);
+  --soft-red: hsl(14, 88%, 65%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,6 +20,7 @@ body {
   background-attachment: fixed;
   font-family: "Kumbh Sans";
   overflow-y: hidden;
+  font-size: 12px;
 }
 
 section {
@@ -19,7 +28,6 @@ section {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
 }
 
 .content {
@@ -35,34 +43,71 @@ section {
 .title h1 {
   text-align: center;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 2.5rem;
+  color: var(--very-dark-grey-blue);
+  margin-top: 45px;
 }
 
 .main-content {
   display: flex;
   justify-content: space-between;
-  
 }
 
-.img-stack{
-    position: relative;
-    right: 70px;
+.img-stack {
+  position: relative;
+  right: 70px;
+  top: 10px;
 }
 
-.img-stack img{
-position: absolute;
+.img-stack img {
+  position: absolute;
 }
 
-.img-stack img[alt="lines"]{ 
-    position: absolute;
-    transform: translate(-490px,-380px);
-    z-index: 10;
+.img-stack img[alt="lines"] {
+  position: absolute;
+  transform: translate(-490px, -380px);
+  z-index: 10;
 }
-.img-stack img[alt="block"]{
-    position: fixed;
-    margin-top: 120px;
-    z-index: 10;
+.img-stack img[alt="block"] {
+  position: fixed;
+  margin-top: 120px;
+  z-index: 10;
 }
 
+/* paragraph and arrow row */
 
+.text-content {
+  position: relative;
+  top: 23px;
+  right: 65px;
+  width: 400px;
+}
 
+.text-box {
+  width: 100%;
+  margin: 35px 0px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.row:hover {
+  color: var(--soft-red);
+}
+
+/* .row p {
+  margin: 15px 0px;
+} */
+
+.divider {
+  width: 100%;
+  background: var(--divider);
+  height: 1px;
+}
