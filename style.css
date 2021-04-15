@@ -291,10 +291,22 @@ section {
   .content {
     height: 60vh;
   }
+
+  .row {
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 360px) {
   .content {
     height: 65vh;
+  }
+
+  .row {
+    font-size: 0.65;
+  }
+
+  .answer {
+    font-size: 0.55rem;
   }
 }
