@@ -292,3 +292,9 @@ section {
     height: 60vh;
   }
 }
+
+@media (max-width: 360px) {
+  .content {
+    height: 65vh;
+  }
+}
