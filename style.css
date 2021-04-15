@@ -299,14 +299,18 @@ section {
 
 @media (max-width: 360px) {
   .content {
-    height: 75vh;
+    height: 70vh;
   }
 
   .row {
-    font-size: 0.65;
+    font-size: 0.65rem;
   }
 
   .answer {
     font-size: 0.55rem;
+  }
+
+  .text-content {
+    top: 15px;
   }
 }
