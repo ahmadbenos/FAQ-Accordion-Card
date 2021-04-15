@@ -299,7 +299,7 @@ section {
 
 @media (max-width: 360px) {
   .content {
-    height: 65vh;
+    height: 75vh;
   }
 
   .row {
